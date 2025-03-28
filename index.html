@@ -1,0 +1,396 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Budget - Prenez le contrôle de vos finances</title>
+    <meta name="description" content="Coach Budget vous aide à mieux gérer vos finances personnelles avec un coaching financier personnalisé et des outils interactifs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="color-scheme" content="light dark">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" fill="#2E7D32" />
+                    <path d="M15 20C15 16.13 18.13 13 22 13C25.87 13 29 16.13 29 20C29 23.87 25.87 27 22 27" stroke="white" stroke-width="2" />
+                    <path d="M22 27H11" stroke="white" stroke-width="2" />
+                    <path d="M22 23L25 20L22 17" stroke="white" stroke-width="2" />
+                </svg>
+                <span>Coach Budget</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                <li><a href="#coaching">Coaching</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="background-animation"></div>
+        <div class="hero-content">
+            <h1>Prenez le contrôle de vos finances, un centime à la fois !</h1>
+            <p>Coach Budget vous accompagne dans la gestion de vos finances personnelles avec des conseils personnalisés et des outils simples d'utilisation.</p>
+            <button class="cta-button">Essayez gratuitement</button>
+        </div>
+        <div class="hero-image">
+            <svg id="hero-app-illustration" width="500" height="300" viewBox="0 0 500 300"></svg>
+        </div>
+    </section>
+
+    <section id="fonctionnalites" class="features">
+        <h2>Nos Fonctionnalités</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-icon" id="realtime-analysis"></div>
+                <h3>Analyse des Dépenses en Temps Réel</h3>
+                <p>Visualisez instantanément où va votre argent et identifiez les opportunités d'économies grâce à notre catégorisation intelligente et nos alertes personnalisées.</p>
+                <div class="feature-details-container" id="analysis-details"></div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" id="auto-savings"></div>
+                <h3>Micro-Épargne Automatique</h3>
+                <p>Épargnez sans y penser grâce à notre système intelligent qui arrondit vos achats ou met de côté un pourcentage de vos revenus pour atteindre vos objectifs.</p>
+                <div class="feature-details-container" id="savings-details"></div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" id="personalized-advice"></div>
+                <h3>Conseils Personnalisés</h3>
+                <p>Recevez des conseils adaptés à votre situation financière et des plans d'action sur mesure pour atteindre vos objectifs plus rapidement.</p>
+                <div class="feature-details-container" id="advice-details"></div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" id="budget-alerts"></div>
+                <h3>Alertes Budgétaires</h3>
+                <p>Soyez informé avant de dépasser votre budget et recevez des recommandations immédiates pour corriger le cap grâce à nos notifications intelligentes.</p>
+                <div class="feature-details-container" id="alerts-details"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="coaching" class="coaching">
+        <h2>Coaching Financier Personnalisé</h2>
+        <div class="coaching-container">
+            <div class="dashboard-preview">
+                <div class="dashboard-demo">
+                    <div id="interactive-dashboard"></div>
+                </div>
+            </div>
+            <div class="coaching-info">
+                <div class="virtual-advisor">
+                    <h3>Votre Conseiller Virtuel IA</h3>
+                    <div class="advisor-avatar" id="virtual-coach">
+                        <svg class="coach-svg" width="180" height="180" viewBox="0 0 200 200">
+                            <defs>
+                                <linearGradient id="head-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#64b5f6"/>
+                                    <stop offset="100%" stop-color="#1976D2"/>
+                                </linearGradient>
+                                <linearGradient id="suit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#4CAF50"/>
+                                    <stop offset="100%" stop-color="#2E7D32"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Head and face -->
+                            <circle cx="100" cy="70" r="50" fill="url(#head-gradient)"/>
+                            <circle cx="80" cy="60" r="5" fill="white"/>
+                            <circle cx="120" cy="60" r="5" fill="white"/>
+                            <path d="M90 85 Q100 95 110 85" stroke="white" stroke-width="3" fill="none"/>
+                            
+                            <!-- Suit/Body -->
+                            <path d="M50 120 L100 190 L150 120 Z" fill="url(#suit-gradient)"/>
+                            <rect x="60" y="120" width="80" height="60" fill="url(#suit-gradient)"/>
+                            
+                            <!-- Tie -->
+                            <path d="M90 120 L100 140 L110 120 L105 170 L100 180 L95 170 Z" fill="#FF9800"/>
+                            
+                            <!-- Brain visualization with enhanced AI effect -->
+                            <path class="brain-wave" d="M70 40 Q80 30 90 40 Q100 50 110 40 Q120 30 130 40" stroke="white" stroke-width="2" fill="none" opacity="0.6"/>
+                            <circle cx="100" cy="50" r="20" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.4" class="ai-circle"/>
+                            <path d="M85 45 L115 55" stroke="#FFFFFF" stroke-width="1" opacity="0.4" class="ai-connection"/>
+                            <path d="M85 55 L115 45" stroke="#FFFFFF" stroke-width="1" opacity="0.4" class="ai-connection"/>
+                        </svg>
+                    </div>
+                    <p>Un coach financier IA qui analyse vos données, conseille et anticipe vos besoins financiers en temps réel.</p>
+                </div>
+                <div class="financial-forecast">
+                    <h3>Prévision Financière</h3>
+                    <p>Simulez différents scénarios financiers pour mieux préparer votre avenir.</p>
+                    <div id="forecast-tool"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="card-activation" class="card-activation">
+        <h2>Activez votre carte bancaire</h2>
+        <div class="card-activation-container">
+            <div class="credit-card-container">
+                <div class="credit-card">
+                    <div class="card-front">
+                        <div class="card-chip"></div>
+                        <div class="card-logo">Coach Budget</div>
+                        <div class="card-number">4539 •••• •••• 3278</div>
+                        <div class="card-holder">VOTRE NOM</div>
+                        <div class="card-expiry">VALABLE JUSQU'À<br>12/28</div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-stripe"></div>
+                        <div class="card-cvc">***</div>
+                        <div class="card-text">Cette carte est liée à votre compte Coach Budget. Elle vous permet de suivre vos dépenses en temps réel et d'optimiser votre budget automatiquement.</div>
+                        <div class="card-signature"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="card-activation-button">Activer ma carte</button>
+            <p class="card-info">Surveillez vos dépenses en temps réel et obtenez des cashbacks sur vos achats courants</p>
+        </div>
+    </section>
+
+    <section id="emergency" class="emergency-mode">
+        <div class="emergency-container">
+            <h2>Mode "Urgence Financière"</h2>
+            <div class="emergency-content">
+                <div class="emergency-alerts">
+                    <h3>Alertes et Conseils Immédiats</h3>
+                    <p>Obtenez des solutions rapides pour faire face aux situations financières imprévues.</p>
+                    <div class="alert-example" id="emergency-alert"></div>
+                </div>
+                <div class="emergency-resources">
+                    <h3>Ressources et Astuces</h3>
+                    <ul>
+                        <li>Guides pour gérer les imprévus financiers</li>
+                        <li>Stratégies d'économie rapide</li>
+                        <li>Contacts utiles en cas de difficulté</li>
+                    </ul>
+                </div>
+                <div class="community-support">
+                    <h3>Support Communautaire</h3>
+                    <p>Rejoignez notre forum d'entraide pour partager vos expériences et bénéficier des conseils de la communauté.</p>
+                    <button class="secondary-button">Rejoindre la communauté</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="challenges" class="challenges">
+        <!-- This section will be populated by JavaScript -->
+    </section>
+
+    <section id="rewards-shop" class="rewards-shop">
+        <!-- This section will be populated by JavaScript -->
+    </section>
+
+    <section id="temoignages" class="testimonials">
+        <h2>Ce que nos utilisateurs disent</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-container" id="testimonial-container"></div>
+            <div class="slider-controls">
+                <button id="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2>Blog et Ressources Éducatives</h2>
+        <div class="blog-container">
+            <div class="blog-card">
+                <div class="blog-image"></div>
+                <div class="blog-content">
+                    <h3>Comment économiser 20% de vos revenus sans effort</h3>
+                    <p>Découvrez les méthodes simples pour mettre de l'argent de côté automatiquement.</p>
+                    <a href="#" class="read-more">Lire l'article</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-image" style="background-color: #e8f5e9;"></div>
+                <div class="blog-content">
+                    <h3>Les investissements pour débutants</h3>
+                    <p>Guide simple pour commencer à investir même avec un petit budget.</p>
+                    <a href="#" class="read-more">Lire l'article</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-image" style="background-color: #e3f2fd;"></div>
+                <div class="blog-content">
+                    <h3>Webinaire : Préparer sa retraite dès 30 ans</h3>
+                    <p>Inscrivez-vous à notre prochain webinaire avec des experts financiers.</p>
+                    <a href="#" class="read-more">S'inscrire</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-cta">
+            <button class="secondary-button">Voir tous les articles</button>
+        </div>
+    </section>
+
+    <section id="tarifs" class="pricing">
+        <h2>Nos formules</h2>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Gratuit</h3>
+                    <p class="price">0 DH<span>/mois</span></p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Suivi des dépenses basique</li>
+                    <li><i class="fas fa-check"></i> Alertes budgétaires limitées</li>
+                    <li><i class="fas fa-check"></i> Accès communautaire</li>
+                    <li><i class="fas fa-times"></i> Conseils personnalisés</li>
+                    <li><i class="fas fa-times"></i> Micro-épargne automatique</li>
+                </ul>
+                <button class="pricing-button">Commencer</button>
+            </div>
+            <div class="pricing-card featured">
+                <div class="pricing-badge">Populaire</div>
+                <div class="pricing-header">
+                    <h3>Premium</h3>
+                    <p class="price">49,99 DH<span>/mois</span></p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Suivi des dépenses complet</li>
+                    <li><i class="fas fa-check"></i> Alertes budgétaires illimitées</li>
+                    <li><i class="fas fa-check"></i> Accès communautaire</li>
+                    <li><i class="fas fa-check"></i> Conseils personnalisés</li>
+                    <li><i class="fas fa-check"></i> Micro-épargne automatique</li>
+                </ul>
+                <button class="pricing-button">Essai gratuit de 30 jours</button>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Famille</h3>
+                    <p class="price">99,99 DH<span>/mois</span></p>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Tout ce qui est inclus dans Premium</li>
+                    <li><i class="fas fa-check"></i> Jusqu'à 5 utilisateurs</li>
+                    <li><i class="fas fa-check"></i> Gestion des dépenses familiales</li>
+                    <li><i class="fas fa-check"></i> Objectifs d'épargne partagés</li>
+                    <li><i class="fas fa-check"></i> Coach financier dédié</li>
+                </ul>
+                <button class="pricing-button">Essai gratuit de 30 jours</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" fill="#2E7D32" />
+                    <path d="M15 20C15 16.13 18.13 13 22 13C25.87 13 29 16.13 29 20C29 23.87 25.87 27 22 27" stroke="white" stroke-width="2" />
+                    <path d="M22 27H11" stroke="white" stroke-width="2" />
+                    <path d="M22 23L25 20L22 17" stroke="white" stroke-width="2" />
+                </svg>
+                <span>Coach Budget</span>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>À propos</h4>
+                    <ul>
+                        <li><a href="#">Notre mission</a></li>
+                        <li><a href="#">L'équipe</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Presse</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Sécurité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">RGPD</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Restez informé</h4>
+                        <form>
+                            <input type="email" placeholder="Votre email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Coach Budget. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <div class="coach-chat-interface">
+        <div class="chat-header">
+            <div class="chat-title">
+                <div class="chat-avatar">
+                    <svg width="30" height="30" viewBox="0 0 200 200">
+                        <circle cx="100" cy="70" r="50" fill="#4CAF50"/>
+                        <path d="M50 120 L100 190 L150 120 Z" fill="#2E7D32"/>
+                    </svg>
+                </div>
+                <div>
+                    <h4>Conseiller Financier</h4>
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        En ligne
+                    </div>
+                </div>
+            </div>
+            <div class="chat-actions">
+                <button class="minimize-chat"><i class="fas fa-minus"></i></button>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="chat-messages">
+            <div class="message coach-message">
+                Bonjour ! Je suis votre conseiller financier virtuel. Comment puis-je vous aider à mieux gérer vos finances aujourd'hui ?
+            </div>
+        </div>
+        <div class="chat-suggestions">
+            <button class="suggestion-btn">Comment économiser ?</button>
+            <button class="suggestion-btn">Analyser mes dépenses</button>
+            <button class="suggestion-btn">Objectifs d'épargne</button>
+            <button class="suggestion-btn">Conseils d'investissement</button>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Posez votre question financière...">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.4/d3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
